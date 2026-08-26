@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>PRAGADEESH — Software Developer & AI/ML Engineer | Portfolio</title>
+  <meta name="title" content="PRAGADEESH — Software Developer & AI/ML Engineer | Portfolio">
+  <meta name="description" content="Portfolio of Pragadeesh — Aspiring Software Developer & AI/ML Engineer with expertise in Python, Java, SQL, ASP.NET, Full Stack Development, Data Analytics, and UI/UX Design.">
+  <meta name="keywords" content="Pragadeesh, Software Developer, AI ML Engineer, Full Stack Developer, Python, ASP.NET, SQL, Coimbatore, Portfolio">
+  <meta name="author" content="Pragadeesh">
+  <meta name="theme-color" content="#070204">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PRAGADEESH — Software Developer & AI/ML Engineer">
+  <meta property="og:description" content="Explore projects, skills, internship experience, and certifications of Pragadeesh.">
+  <meta property="og:image" content="assets/images/hero-portrait.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ff2d55'>P</text></svg>">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Custom Magnetic Cursor (Desktop) -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Preloader -->
+  <div class="site-preloader" aria-hidden="true">
+    <div class="preloader-emblem">
+      <div class="preloader-spinner"></div>
+      <span class="preloader-letter">P</span>
+    </div>
+    <span class="preloader-progress-text">Initializing Portfolio...</span>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" role="alert">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6L9 17l-5-5"/>
+    </svg>
+    <span class="toast-text">Notification</span>
+  </div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo" aria-label="Pragadeesh Home">
+        <span>PRAGADEESH</span><span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- CTA Group -->
+      <div class="nav-cta-group">
+        <a href="assets/docs/Pragadeesh_Resume.pdf" download="Pragadeesh_Resume.pdf" class="btn btn-primary btn-sm" aria-label="Download Resume">
+          <span>Resume</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress-bar"></div>
+  </header>
+
+  <!-- Mobile Fullscreen Menu -->
+  <div class="mobile-menu" aria-label="Mobile Navigation">
+    <a href="#hero" class="mobile-link active">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <div style="margin-top: 1rem;">
+      <a href="assets/docs/Pragadeesh_Resume.pdf" download="Pragadeesh_Resume.pdf" class="btn btn-primary">
+        <span>Download Resume</span>
+        <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Background Visual Anchor (User Photograph) -->
+      <div class="hero-bg-container">
+        <img src="assets/images/hero-portrait.jpg" alt="Pragadeesh Portrait" class="hero-portrait-img" loading="eager">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="availability-pill" data-reveal="fade-down" data-delay="100">
+            <span class="pulse-indicator"></span>
+            <span>Open for Software Developer & AI/ML Roles</span>
+          </div>
+
+          <!-- Headline Greeting -->
+          <p class="hero-greeting" data-reveal="fade-up" data-delay="200">Hello, I Am</p>
+
+          <!-- Main Editorial Name -->
+          <h1 class="hero-name" data-reveal="fade-up" data-delay="300">
+            PRAGADEESH<span class="glow-letter">.</span>
+          </h1>
+
+          <!-- Role Rotator -->
+          <h2 class="hero-headline" data-reveal="fade-up" data-delay="400">
+            Aspiring <span class="typed-role">AI & Machine Learning Engineer</span>
+          </h2>
+
+          <!-- Authentic Summary from Resume -->
+          <p class="hero-summary" data-reveal="fade-up" data-delay="500">
+            Aspiring Software Developer with a strong foundation in <strong>Python, Java, SQL, ASP.NET, Full Stack Development, and AI/ML</strong>. Passionate about engineering scalable software solutions, solving complex problems, and designing user-centric digital experiences.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions" data-reveal="fade-up" data-delay="600">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+
+            <a href="assets/docs/Pragadeesh_Resume.pdf" download="Pragadeesh_Resume.pdf" class="btn btn-secondary">
+              <span>Download Resume</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Highlight Chips -->
+          <div class="hero-highlights" data-reveal="fade-up" data-delay="700">
+            <div class="highlight-chip">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </span>
+              <span>MCA @ Kumaraguru College of Technology</span>
+            </div>
+
+            <div class="highlight-chip">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </span>
+              <span>AI/ML Intern @ Globotics</span>
+            </div>
+
+            <div class="highlight-chip">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </span>
+              <span>Full Stack & AI/ML Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Mouse Prompt -->
+      <a href="#about" class="hero-scroll-prompt" aria-label="Scroll down to About section">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         2. ABOUT SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>01 // Professional Narrative</span>
+          </div>
+          <h2 class="section-title">
+            Transforming Complex Ideas Into <span class="accent-text">Scalable Solutions</span>
+          </h2>
+          <p class="section-subtitle">
+            A dedicated software developer and AI engineer passionate about building intelligent models, robust web architectures, and seamless interfaces.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Column -->
+          <div class="about-story" data-reveal="fade-right">
+            <p class="story-lead">
+              Driven by a deep curiosity for computing, algorithms, and human-centered design.
+            </p>
+            <p class="story-text">
+              Equipped with a solid academic foundation in Computer Applications and practical industry experience in Artificial Intelligence & Machine Learning, I specialize in architecting full-stack applications and high-efficiency data workflows.
+            </p>
+            <p class="story-text">
+              From engineering machine learning algorithms and automating workflows with RPA to crafting secure ASP.NET enterprise systems and interactive UI/UX prototypes in Figma, I focus on building reliable software that delivers measurable value.
+            </p>
+
+            <!-- Metrics Grid -->
+            <div class="about-metrics">
+              <div class="metric-card">
+                <div class="metric-number" data-target="7.44" data-decimal="true">0.00</div>
+                <div class="metric-label">Master of Computer Applications CGPA (Anna University)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-number" data-target="7.70" data-decimal="true">0.00</div>
+                <div class="metric-label">Bachelor of Computer Applications CGPA (Bharathiyar Univ.)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Pillars Column -->
+          <div class="about-pillars" data-reveal="fade-left">
+            <div class="pillar-item">
+              <span class="pillar-index">01</span>
+              <div class="pillar-content">
+                <h3>Full Stack Engineering</h3>
+                <p>Developing scalable web backends and responsive frontends using Python, Java, SQL, and ASP.NET.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <span class="pillar-index">02</span>
+              <div class="pillar-content">
+                <h3>AI & Machine Learning</h3>
+                <p>Building predictive models, preprocessing datasets, and extracting actionable intelligence from complex data.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <span class="pillar-index">03</span>
+              <div class="pillar-content">
+                <h3>User-Centric UI/UX Design</h3>
+                <p>Prototyping responsive, aesthetic, and accessible user interfaces with Figma and modern web design principles.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <span class="pillar-index">04</span>
+              <div class="pillar-content">
+                <h3>Data Quality & Automation</h3>
+                <p>Ensuring rigorous data cleaning, database optimization, and implementing Robotic Process Automation (RPA).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SKILLS ECOSYSTEM SECTION
+         ========================================================================== -->
+    <section class="section" id="skills" style="background: linear-gradient(180deg, #070204 0%, #0d0407 50%, #070204 100%);">
+      <div class="container">
+        <div class="section-header center" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>02 // Technical Capabilities</span>
+          </div>
+          <h2 class="section-title">
+            Skills & <span class="accent-text">Technologies</span>
+          </h2>
+          <p class="section-subtitle">
+            Core technologies and tools mastered through academic rigor, internship development, and practical software projects.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="skills-filter-nav" data-reveal="fade-up">
+          <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+          <button class="skill-filter-btn" data-filter="programming">Programming & Core</button>
+          <button class="skill-filter-btn" data-filter="aiml">AI / ML</button>
+          <button class="skill-filter-btn" data-filter="data">Data & Analytics</button>
+          <button class="skill-filter-btn" data-filter="web">Web Development</button>
+          <button class="skill-filter-btn" data-filter="uiux">UI/UX Design</button>
+          <button class="skill-filter-btn" data-filter="cloud">Cloud & Tools</button>
+        </div>
+
+        <!-- Skills Cards Matrix -->
+        <div class="skills-grid" data-reveal="fade-up">
+          <!-- Programming & Core -->
+          <div class="skill-category-card" data-category="programming">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3>Programming & Core</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Data Structures</span>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-category-card" data-category="aiml">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+              <h3>AI & Machine Learning</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Artificial Intelligence</span>
+              <span class="skill-tag">Machine Learning (AI/ML)</span>
+              <span class="skill-tag">Dataset Preprocessing</span>
+              <span class="skill-tag">Algorithm Training</span>
+              <span class="skill-tag">Model Optimization</span>
+            </div>
+          </div>
+
+          <!-- Data Analytics & Visualization -->
+          <div class="skill-category-card" data-category="data">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+              <h3>Data & Analytics</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Data Analytics</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Data Cleaning</span>
+              <span class="skill-tag">Database Management</span>
+              <span class="skill-tag">SQL Server 2019</span>
+            </div>
+          </div>
+
+          <!-- Web Application Development -->
+          <div class="skill-category-card" data-category="web">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3>Web & Full Stack</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">ASP.NET 2022</span>
+              <span class="skill-tag">Full Stack Development</span>
+              <span class="skill-tag">Web Application Dev</span>
+              <span class="skill-tag">Responsive Web Design</span>
+              <span class="skill-tag">Chart.js</span>
+            </div>
+          </div>
+
+          <!-- UI/UX & Design -->
+          <div class="skill-category-card" data-category="uiux">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                  <path d="M2 2l7.586 7.586"/>
+                  <circle cx="11" cy="11" r="2"/>
+                </svg>
+              </div>
+              <h3>UI/UX Design</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag">UI/UX Design (Figma)</span>
+              <span class="skill-tag">User Interface Design</span>
+              <span class="skill-tag">User-Centric Design</span>
+              <span class="skill-tag">Wireframing & Prototypes</span>
+            </div>
+          </div>
+
+          <!-- Cloud & Automation -->
+          <div class="skill-category-card" data-category="cloud">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                </svg>
+              </div>
+              <h3>Cloud & Automation</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Google Cloud Platform (GCP)</span>
+              <span class="skill-tag">Cloud Computing</span>
+              <span class="skill-tag">psutil</span>
+              <span class="skill-tag">RPA and Techniques</span>
+              <span class="skill-tag">Automation Techniques in RPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infinite Scrolling Skills Marquee -->
+        <div class="skills-marquee-wrapper">
+          <div class="skills-marquee-track">
+            <div class="marquee-item"><span class="item-bullet">✦</span> Python</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> FastAPI</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Google Cloud Platform</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Machine Learning (AI/ML)</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> ASP.NET 2022</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> SQL Server</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Chart.js</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Figma UI/UX</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> RPA Automation</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Data Structures</div>
+            <!-- Duplicated for seamless loop -->
+            <div class="marquee-item"><span class="item-bullet">✦</span> Python</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> FastAPI</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Google Cloud Platform</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Machine Learning (AI/ML)</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> ASP.NET 2022</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> SQL Server</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Chart.js</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Figma UI/UX</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> RPA Automation</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Data Structures</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. INTERNSHIP / EXPERIENCE SECTION
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>03 // Industry Experience</span>
+          </div>
+          <h2 class="section-title">
+            Internship & <span class="accent-text">Team Contributions</span>
+          </h2>
+          <p class="section-subtitle">
+            Practical application of machine learning, dataset preprocessing, team collaboration, and analytical visualization in a professional environment.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-spine"></div>
+
+          <!-- Globotics Internship Card -->
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">AI & Machine Learning Intern</h3>
+                  <div class="company-name">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    <span>Globotics — Coimbatore</span>
+                  </div>
+                </div>
+                <div class="timeline-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Jun 2026 – Jul 2026</span>
+                </div>
+              </div>
+
+              <div class="timeline-responsibilities">
+                <div class="resp-item">
+                  <span class="resp-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <p><strong>Machine Learning Model Development:</strong> Developed and evaluated machine learning models to improve data analysis efficiency and automated insights.</p>
+                </div>
+
+                <div class="resp-item">
+                  <span class="resp-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <p><strong>Dataset Preprocessing:</strong> Assisted in data cleaning, wrangling, and preprocessing datasets for training algorithms, ensuring data quality and model accuracy.</p>
+                </div>
+
+                <div class="resp-item">
+                  <span class="resp-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <p><strong>Cross-Functional Collaboration:</strong> Actively collaborated with team members on AI project tasks, enhancing agile communication and streamlining workflow processes.</p>
+                </div>
+
+                <div class="resp-item">
+                  <span class="resp-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <p><strong>Data Visualizations:</strong> Developed polished and intuitive visual dashboards to communicate results of data analyses effectively to project stakeholders.</p>
+                </div>
+              </div>
+
+              <div class="timeline-tags">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Machine Learning</span>
+                <span class="tech-badge">Data Preprocessing</span>
+                <span class="tech-badge">Data Visualization</span>
+                <span class="tech-badge">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. PROJECTS SECTION
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>04 // Featured Project Showcase</span>
+          </div>
+          <h2 class="section-title">
+            Engineering & <span class="accent-text">Software Security</span>
+          </h2>
+          <p class="section-subtitle">
+            A deep dive into production-level architecture, licensing protection, and secure application development.
+          </p>
+        </div>
+
+        <div class="projects-container">
+          <!-- Project 1: CloudPulse AI -->
+          <div class="project-featured-card" data-reveal="zoom-in">
+            <div class="project-card-grid">
+              <!-- Info Side -->
+              <div class="project-info-side">
+                <div>
+                  <div class="project-type-tag">Intelligent Cloud Monitoring & ML Anomaly Detection</div>
+                  <h3 class="project-title">CloudPulse AI</h3>
+                  <p class="project-desc">
+                    CloudPulse AI is an intelligent cloud monitoring and anomaly detection platform designed to provide real-time visibility into Google Cloud VM resources. The system collects CPU, memory, and disk telemetry via a Python agent, streams metrics to a FastAPI backend, and leverages machine learning to detect unusual resource spikes and evaluate system risk.
+                  </p>
+
+                  <!-- Feature Bullets -->
+                  <div class="project-features-list">
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                      </svg>
+                      <span>Real-Time CPU, Memory & Disk Telemetry</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                      </svg>
+                      <span>Python & psutil VM Monitoring Agent</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                      </svg>
+                      <span>FastAPI REST API Ingestion Backend</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                      </svg>
+                      <span>ML-Based Anomaly & Risk Detection</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"/>
+                        <line x1="12" y1="20" x2="12" y2="4"/>
+                        <line x1="6" y1="20" x2="6" y2="14"/>
+                      </svg>
+                      <span>Interactive Live Dashboard (Chart.js)</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                      </svg>
+                      <span>Google Cloud Platform (GCP) Deployment</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="project-tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">FastAPI</span>
+                    <span class="tech-badge">psutil</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">Google Cloud Platform</span>
+                    <span class="tech-badge">Chart.js</span>
+                    <span class="tech-badge">REST APIs</span>
+                  </div>
+
+                  <a href="#contact" class="btn btn-primary btn-sm">
+                    <span>Discuss CloudPulse AI</span>
+                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"/>
+                      <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Architecture Flow Side -->
+              <div class="project-visual-side">
+                <div class="architecture-diagram">
+                  <!-- Node 1 -->
+                  <div class="arch-node">
+                    <div class="arch-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>1. Python & psutil Agent</h4>
+                      <p>Continuous resource polling (CPU, RAM, Disk) on GCP VM</p>
+                    </div>
+                  </div>
+
+                  <div class="arch-connector"></div>
+
+                  <!-- Node 2 -->
+                  <div class="arch-node">
+                    <div class="arch-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>2. FastAPI REST Ingestion</h4>
+                      <p>High-throughput telemetry ingestion & JSON serialization</p>
+                    </div>
+                  </div>
+
+                  <div class="arch-connector"></div>
+
+                  <!-- Node 3 -->
+                  <div class="arch-node">
+                    <div class="arch-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>3. ML Anomaly Detection</h4>
+                      <p>Statistical & ML algorithms identify behavioral outliers & risk</p>
+                    </div>
+                  </div>
+
+                  <div class="arch-connector"></div>
+
+                  <!-- Node 4 -->
+                  <div class="arch-node" style="border-color: var(--accent-ruby); background: rgba(35, 12, 22, 0.9);">
+                    <div class="arch-icon" style="background: var(--accent-ruby); color: #fff;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"/>
+                        <line x1="12" y1="20" x2="12" y2="4"/>
+                        <line x1="6" y1="20" x2="6" y2="14"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>4. Interactive Live Dashboard</h4>
+                      <p>Real-time Chart.js telemetry with risk indicators & alerts</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Software Piracy Protection System -->
+          <div class="project-featured-card" data-reveal="zoom-in">
+            <div class="project-card-grid">
+              <!-- Info Side -->
+              <div class="project-info-side">
+                <div>
+                  <div class="project-type-tag">Enterprise Licensing & Anti-Piracy Architecture</div>
+                  <h3 class="project-title">Software Piracy Protection System</h3>
+                  <p class="project-desc">
+                    Designed and implemented a comprehensive Software Piracy Protection System using ASP.NET 2022 and SQL Server 2019 to secure software distribution and protect intellectual property against unauthorized distribution and tampering.
+                  </p>
+
+                  <!-- Feature Bullets -->
+                  <div class="project-features-list">
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      </svg>
+                      <span>Secure Online Purchase Portal</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                      </svg>
+                      <span>Two-Factor OTP Activation</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                        <line x1="6" y1="6" x2="6.01" y2="6"/>
+                        <line x1="6" y1="18" x2="6.01" y2="18"/>
+                      </svg>
+                      <span>IP & MAC Address Binding</span>
+                    </div>
+
+                    <div class="feat-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                      </svg>
+                      <span>Anti-Piracy Access Engine</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="project-tech-stack">
+                    <span class="tech-badge">ASP.NET 2022</span>
+                    <span class="tech-badge">SQL Server 2019</span>
+                    <span class="tech-badge">C#</span>
+                    <span class="tech-badge">OTP Security</span>
+                    <span class="tech-badge">Hardware Binding</span>
+                    <span class="tech-badge">Full Stack</span>
+                  </div>
+
+                  <a href="#contact" class="btn btn-primary btn-sm">
+                    <span>Discuss This Architecture</span>
+                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"/>
+                      <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Architecture Flow Side -->
+              <div class="project-visual-side">
+                <div class="architecture-diagram">
+                  <!-- Node 1 -->
+                  <div class="arch-node">
+                    <div class="arch-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="8.5" cy="7" r="4"/>
+                        <line x1="20" y1="8" x2="20" y2="14"/>
+                        <line x1="23" y1="11" x2="17" y2="11"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>1. User Registration & Purchase</h4>
+                      <p>Encrypted user onboarding & verified payment token</p>
+                    </div>
+                  </div>
+
+                  <div class="arch-connector"></div>
+
+                  <!-- Node 2 -->
+                  <div class="arch-node">
+                    <div class="arch-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>2. OTP-Based Activation</h4>
+                      <p>Time-sensitive single-use verification token</p>
+                    </div>
+                  </div>
+
+                  <div class="arch-connector"></div>
+
+                  <!-- Node 3 -->
+                  <div class="arch-node">
+                    <div class="arch-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>3. IP / MAC Address Hardware Binding</h4>
+                      <p>Machine fingerprinting locks license to authorized hardware</p>
+                    </div>
+                  </div>
+
+                  <div class="arch-connector"></div>
+
+                  <!-- Node 4 -->
+                  <div class="arch-node" style="border-color: var(--accent-ruby); background: rgba(35, 12, 22, 0.9);">
+                    <div class="arch-icon" style="background: var(--accent-ruby); color: #fff;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      </svg>
+                    </div>
+                    <div class="arch-text">
+                      <h4>4. Anti-Piracy Authorization Engine</h4>
+                      <p>Real-time verification prevents unlicensed software duplication</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. EDUCATION SECTION
+         ========================================================================== -->
+    <section class="section" id="education" style="background: linear-gradient(180deg, #070204 0%, #0d0407 50%, #070204 100%);">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>05 // Academic Foundation</span>
+          </div>
+          <h2 class="section-title">
+            Education & <span class="accent-text">Qualifications</span>
+          </h2>
+          <p class="section-subtitle">
+            Comprehensive computer science and computer applications education from reputable universities and institutions.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- MCA Card -->
+          <div class="edu-card" data-reveal="fade-up" data-delay="100">
+            <div>
+              <span class="edu-level-badge">Postgraduate Degree</span>
+              <h3 class="edu-degree">Master of Computer Applications</h3>
+              <p class="edu-specialization">Computer Applications Development</p>
+              <p class="edu-institution">Kumaraguru College of Technology</p>
+              <p class="edu-university">Anna University</p>
+            </div>
+            <div class="edu-score-box">
+              <span class="edu-score-label">Academic Score</span>
+              <span class="edu-score-val">CGPA: 7.44</span>
+            </div>
+          </div>
+
+          <!-- BCA Card -->
+          <div class="edu-card" data-reveal="fade-up" data-delay="200">
+            <div>
+              <span class="edu-level-badge">Undergraduate Degree</span>
+              <h3 class="edu-degree">Bachelor of Computer Applications</h3>
+              <p class="edu-specialization">Computer Applications Development</p>
+              <p class="edu-institution">Dr G R Damodaran College of Science</p>
+              <p class="edu-university">Bharathiyar University</p>
+            </div>
+            <div class="edu-score-box">
+              <span class="edu-score-label">Academic Score</span>
+              <span class="edu-score-val">CGPA: 7.70</span>
+            </div>
+          </div>
+
+          <!-- HSC Card -->
+          <div class="edu-card" data-reveal="fade-up" data-delay="300">
+            <div>
+              <span class="edu-level-badge">Higher Secondary</span>
+              <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
+              <p class="edu-specialization">Science & Mathematics Curriculum</p>
+              <p class="edu-institution">Kendriya Vidyalaya</p>
+              <p class="edu-university">Ministry of H.R.D Govt of India | CBSE</p>
+            </div>
+            <div class="edu-score-box">
+              <span class="edu-score-label">Final Grade</span>
+              <span class="edu-score-val">78.9 %</span>
+            </div>
+          </div>
+
+          <!-- SSLC Card -->
+          <div class="edu-card" data-reveal="fade-up" data-delay="400">
+            <div>
+              <span class="edu-level-badge">Secondary Education</span>
+              <h3 class="edu-degree">Secondary School Certificate (SSLC)</h3>
+              <p class="edu-specialization">General Secondary Curriculum</p>
+              <p class="edu-institution">Kendriya Vidyalaya</p>
+              <p class="edu-university">Ministry of H.R.D Govt of India | CBSE</p>
+            </div>
+            <div class="edu-score-box">
+              <span class="edu-score-label">Final Grade</span>
+              <span class="edu-score-val">63.8 %</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>06 // Verified Credentials</span>
+          </div>
+          <h2 class="section-title">
+            Certifications & <span class="accent-text">Specializations</span>
+          </h2>
+          <p class="section-subtitle">
+            Formal certifications in data cleaning, visual analytics, and Robotic Process Automation (RPA).
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card" data-reveal="fade-up" data-delay="100">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3 class="cert-name">Data Cleaning</h3>
+            <p class="cert-desc">Techniques for handling null values, outlier mitigation, schema normalization, and quality validation.</p>
+            <span class="cert-badge-pill">Verified Credential</span>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card" data-reveal="fade-up" data-delay="200">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="cert-name">Data Visualization</h3>
+            <p class="cert-desc">Visual storytelling, charting statistical patterns, interactive reporting, and analytical dashboarding.</p>
+            <span class="cert-badge-pill">Verified Credential</span>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card" data-reveal="fade-up" data-delay="300">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                <circle cx="12" cy="5" r="2"/>
+                <path d="M12 7v4"/>
+                <line x1="8" y1="16" x2="8.01" y2="16"/>
+                <line x1="16" y1="16" x2="16.01" y2="16"/>
+              </svg>
+            </div>
+            <h3 class="cert-name">RPA and Techniques</h3>
+            <p class="cert-desc">Foundational robotic process automation, bot design patterns, task extraction, and automation workflows.</p>
+            <span class="cert-badge-pill">Verified Credential</span>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card" data-reveal="fade-up" data-delay="400">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="cert-name">Automation Techniques in RPA</h3>
+            <p class="cert-desc">Advanced enterprise automation strategies, exception handling, data integration, and process scalability.</p>
+            <span class="cert-badge-pill">Verified Credential</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>07 // Direct Connection</span>
+          </div>
+          <h2 class="section-title">
+            Let's Build Something <span class="accent-text">Meaningful</span>.
+          </h2>
+          <p class="section-subtitle">
+            Whether you have a job opportunity, a project to collaborate on, or wish to connect, my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-wrapper" data-reveal="zoom-in">
+          <!-- Info Column -->
+          <div class="contact-info-col">
+            <div>
+              <p class="contact-lead-text">
+                Feel free to reach out directly via email, phone, or connect with me on LinkedIn. I am actively looking for opportunities to contribute to dynamic software engineering teams.
+              </p>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method-card">
+                <div class="method-details">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">Email Address</span>
+                    <p class="method-value">pragadeesh.r18@gmail.com</p>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="pragadeesh.r18@gmail.com" data-label="Email">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-method-card">
+                <div class="method-details">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">Phone / WhatsApp</span>
+                    <p class="method-value">+91 99765 24473</p>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+919976524473" data-label="Phone Number">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-method-card">
+                <div class="method-details">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                      <rect x="2" y="9" width="4" height="12"/>
+                      <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">LinkedIn Profile</span>
+                    <p class="method-value">linkedin.com/in/pragadeesh-r-069827328</p>
+                  </div>
+                </div>
+                <a href="https://linkedin.com/in/pragadeesh-r-069827328" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                  <span>Visit</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name *</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Your Email *</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Your Message *</label>
+                <textarea id="sender-message" class="form-textarea" placeholder="Describe the role or project you'd like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <span>Send Message</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       9. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>PRAGADEESH<span style="color: var(--accent-ruby)">.</span></h3>
+          <p>Aspiring Software Developer & AI/ML Engineer</p>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://linkedin.com/in/pragadeesh-r-069827328" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+
+          <a href="mailto:pragadeesh.r18@gmail.com" class="social-circle-btn" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+
+          <a href="tel:+919976524473" class="social-circle-btn" aria-label="Phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> Pragadeesh. All rights reserved.</p>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5 12 12 5 19 12"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

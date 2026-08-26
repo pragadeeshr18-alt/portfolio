@@ -1,0 +1,293 @@
+/* ==========================================================================
+   PRAGADEESH — CINEMATIC ANIMATIONS & INTERACTIVE MOTION SYSTEM
+   ========================================================================== */
+
+/* --- CUSTOM MAGNETIC CURSOR (Desktop Only) --- */
+.custom-cursor-dot,
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.15s ease-out;
+  opacity: 0;
+}
+
+.custom-cursor-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--accent-ruby);
+  box-shadow: 0 0 10px var(--accent-ruby), 0 0 20px var(--accent-glow);
+}
+
+.custom-cursor-ring {
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(255, 45, 85, 0.45);
+  background: rgba(255, 45, 85, 0.04);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.3s ease,
+              border-color 0.3s ease,
+              transform 0.1s ease-out;
+}
+
+/* Cursor Hover / Active States */
+body.cursor-hover .custom-cursor-ring {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 45, 85, 0.14);
+  border-color: var(--accent-ruby);
+  backdrop-filter: blur(2px);
+}
+
+body.cursor-hover .custom-cursor-dot {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #ffffff;
+}
+
+@media (pointer: coarse), (max-width: 1023px) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* --- PRELOADER ANIMATION --- */
+.site-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #050103;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-emblem {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 45, 85, 0.15);
+  border-top-color: var(--accent-ruby);
+  animation: preloader-spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.preloader-letter {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 15px var(--accent-ruby);
+}
+
+.preloader-progress-text {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+/* --- SCROLL-TRIGGERED REVEAL ANIMATIONS --- */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal="fade-up"] {
+  transform: translateY(45px);
+}
+
+[data-reveal="fade-down"] {
+  transform: translateY(-45px);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(45px);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(-45px);
+}
+
+[data-reveal="zoom-in"] {
+  transform: scale(0.92);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Stagger Delay Utilities */
+[data-delay="100"] { transition-delay: 0.1s; }
+[data-delay="200"] { transition-delay: 0.2s; }
+[data-delay="300"] { transition-delay: 0.3s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+[data-delay="500"] { transition-delay: 0.5s; }
+[data-delay="600"] { transition-delay: 0.6s; }
+
+/* --- AMBIENT GLOWS & ILLUMINATION EFFECTS --- */
+.ambient-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  z-index: 1;
+  opacity: 0.45;
+  animation: orb-breathe 8s ease-in-out infinite alternate;
+}
+
+.glow-orb-ruby {
+  background: radial-gradient(circle, rgba(255, 45, 85, 0.35) 0%, transparent 70%);
+}
+
+.glow-orb-amber {
+  background: radial-gradient(circle, rgba(255, 94, 58, 0.25) 0%, transparent 70%);
+}
+
+.glow-orb-purple {
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.2) 0%, transparent 70%);
+}
+
+/* --- KEYFRAME ANIMATIONS --- */
+@keyframes preloader-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-wheel {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes orb-breathe {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.15) translate(20px, -20px);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(0.95) translate(-15px, 15px);
+    opacity: 0.4;
+  }
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Subtle Hover Card Tilt Effect via CSS */
+.tilt-element {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+/* --- ACCESSIBILITY / PREFERS REDUCED MOTION --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .skills-marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .hero-portrait-img {
+    transform: none !important;
+  }
+}
