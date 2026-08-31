@@ -1,6 +1,7 @@
 /**
  * ==========================================================================
  * PRAGADEESH — CINEMATIC ANIMATIONS & MOTION ENGINE
+ * THEME: RED, ORANGE & OBSIDIAN BLACK
  * ==========================================================================
  */
 
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackgroundCanvas();
   initScrollReveal();
   initCustomCursor();
-  initHeroParallax();
+  initPersistentBackdropParallax();
   initRoleTypewriter();
   initMetricCounters();
 });
@@ -46,7 +47,7 @@ function triggerInitialHeroReveals() {
   });
 }
 
-/* --- 2. AMBIENT RUBY PARTICLE CANVAS --- */
+/* --- 2. AMBIENT FIERY EMBER CANVAS (RED & ORANGE SPARKS) --- */
 function initBackgroundCanvas() {
   const canvas = document.getElementById('bg-canvas');
   if (!canvas) return;
@@ -54,14 +55,14 @@ function initBackgroundCanvas() {
   const ctx = canvas.getContext('2d');
   let width, height;
   let particles = [];
-  let mouse = { x: null, y: null, radius: 150 };
+  let mouse = { x: null, y: null, radius: 160 };
 
-  const particleCount = window.innerWidth < 768 ? 24 : 48;
+  const particleCount = window.innerWidth < 768 ? 26 : 52;
   const colors = [
-    'rgba(255, 45, 85, 0.45)',
-    'rgba(255, 94, 58, 0.35)',
-    'rgba(225, 29, 72, 0.3)',
-    'rgba(147, 51, 234, 0.2)'
+    'rgba(255, 42, 75, 0.55)',
+    'rgba(255, 106, 0, 0.45)',
+    'rgba(255, 145, 0, 0.4)',
+    'rgba(225, 29, 72, 0.35)'
   ];
 
   function resize() {
@@ -89,12 +90,12 @@ function initBackgroundCanvas() {
 
     reset(initial = false) {
       this.x = Math.random() * width;
-      this.y = initial ? Math.random() * height : height + 10;
-      this.size = Math.random() * 2.5 + 0.8;
-      this.speedX = (Math.random() - 0.5) * 0.4;
-      this.speedY = -Math.random() * 0.5 - 0.2;
+      this.y = initial ? Math.random() * height : height + 12;
+      this.size = Math.random() * 2.8 + 0.8;
+      this.speedX = (Math.random() - 0.5) * 0.45;
+      this.speedY = -Math.random() * 0.6 - 0.25;
       this.color = colors[Math.floor(Math.random() * colors.length)];
-      this.alpha = Math.random() * 0.6 + 0.2;
+      this.alpha = Math.random() * 0.65 + 0.25;
       this.pulseSpeed = Math.random() * 0.02 + 0.005;
       this.pulseVal = Math.random() * Math.PI;
     }
@@ -111,12 +112,12 @@ function initBackgroundCanvas() {
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < mouse.radius) {
           const force = (mouse.radius - dist) / mouse.radius;
-          this.x -= (dx / dist) * force * 1.5;
-          this.y -= (dy / dist) * force * 1.5;
+          this.x -= (dx / dist) * force * 1.8;
+          this.y -= (dy / dist) * force * 1.8;
         }
       }
 
-      if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+      if (this.y < -15 || this.x < -15 || this.x > width + 15) {
         this.reset();
       }
     }
@@ -127,8 +128,8 @@ function initBackgroundCanvas() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
       ctx.fillStyle = this.color;
-      ctx.shadowBlur = 12;
-      ctx.shadowColor = 'rgba(255, 45, 85, 0.6)';
+      ctx.shadowBlur = 14;
+      ctx.shadowColor = 'rgba(255, 60, 40, 0.7)';
       ctx.globalAlpha = currentAlpha;
       ctx.fill();
       ctx.restore();
@@ -225,7 +226,7 @@ function initCustomCursor() {
   renderCursor();
 
   // Hover triggers for interactive elements
-  const interactives = document.querySelectorAll('a, button, .btn, .skill-tag, .metric-card, .arch-node, .contact-method-card, .highlight-chip, input, textarea');
+  const interactives = document.querySelectorAll('a, button, .btn, .skill-tag, .metric-card, .arch-node, .contact-method-card, .highlight-chip, .hero-hud-card, input, textarea');
   interactives.forEach(el => {
     el.addEventListener('mouseenter', () => {
       document.body.classList.add('cursor-hover');
@@ -236,41 +237,52 @@ function initCustomCursor() {
   });
 }
 
-/* --- 5. CINEMATIC HERO PARALLAX --- */
-function initHeroParallax() {
-  const heroImg = document.querySelector('.hero-portrait-img');
+/* --- 5. PERSISTENT 16:9 IMAGE SCROLL TRAVEL & PARALLAX ENGINE --- */
+function initPersistentBackdropParallax() {
+  const globalImg = document.querySelector('.global-backdrop-img');
+  const heroDashboardImg = document.querySelector('.hero-dashboard-img');
   const heroContent = document.querySelector('.hero-content');
-  if (!heroImg || window.innerWidth < 768) return;
 
-  let lastScrollY = window.scrollY;
   let ticking = false;
 
   function updateParallax() {
     const scrollY = window.scrollY;
-    const heroHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollFraction = docHeight > 0 ? scrollY / docHeight : 0;
 
-    if (scrollY <= heroHeight * 1.2) {
-      const imgTranslate = scrollY * 0.18;
-      const imgScale = 1.02 + scrollY * 0.0003;
-      const contentTranslate = scrollY * 0.08;
-      const contentOpacity = Math.max(0, 1 - (scrollY / (heroHeight * 0.85)));
-
-      heroImg.style.transform = `translateY(${imgTranslate}px) scale(${imgScale})`;
-      if (heroContent) {
-        heroContent.style.transform = `translateY(${contentTranslate}px)`;
-        heroContent.style.opacity = contentOpacity;
-      }
+    // Persistent backdrop motion: travels and subtly shifts scale/position as user scrolls down
+    if (globalImg) {
+      const translateY = scrollFraction * 60; // Subtle downward glide
+      const scale = 1.05 + scrollFraction * 0.08; // Subtle expansion depth
+      const opacity = 0.38 + Math.sin(scrollFraction * Math.PI) * 0.12; // Slight brightness swell in mid-page
+      globalImg.style.transform = `translate3d(0, ${translateY}px, 0) scale(${scale})`;
+      globalImg.style.opacity = opacity;
     }
+
+    // Hero visual dashboard interaction
+    if (heroDashboardImg && scrollY < window.innerHeight * 1.2) {
+      const heroY = scrollY * 0.12;
+      heroDashboardImg.style.transform = `translateY(${heroY}px)`;
+    }
+
+    if (heroContent && scrollY < window.innerHeight * 1.2) {
+      const contentY = scrollY * 0.08;
+      const contentOpacity = Math.max(0, 1 - (scrollY / (window.innerHeight * 0.85)));
+      heroContent.style.transform = `translateY(${contentY}px)`;
+      heroContent.style.opacity = contentOpacity;
+    }
+
     ticking = false;
   }
 
   window.addEventListener('scroll', () => {
-    lastScrollY = window.scrollY;
     if (!ticking) {
       requestAnimationFrame(updateParallax);
       ticking = true;
     }
   }, { passive: true });
+
+  updateParallax();
 }
 
 /* --- 6. HERO ROLE ROTATING TYPEWRITER --- */
@@ -282,7 +294,7 @@ function initRoleTypewriter() {
     'AI & Machine Learning Engineer',
     'Software Developer',
     'Full Stack Web Developer',
-    'Data Analytics Specialist',
+    'Cloud & VM Systems Engineer',
     'UI/UX & Solution Designer'
   ];
 

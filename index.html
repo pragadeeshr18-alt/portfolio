@@ -11,7 +11,7 @@
   <meta name="description" content="Portfolio of Pragadeesh — Aspiring Software Developer & AI/ML Engineer with expertise in Python, Java, SQL, ASP.NET, Full Stack Development, Data Analytics, and UI/UX Design.">
   <meta name="keywords" content="Pragadeesh, Software Developer, AI ML Engineer, Full Stack Developer, Python, ASP.NET, SQL, Coimbatore, Portfolio">
   <meta name="author" content="Pragadeesh">
-  <meta name="theme-color" content="#070204">
+  <meta name="theme-color" content="#050204">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -20,7 +20,7 @@
   <meta property="og:image" content="assets/images/hero-portrait.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ff2d55'>P</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ff2a4b'>P</text></svg>">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
@@ -32,7 +32,13 @@
   <div class="custom-cursor-dot" aria-hidden="true"></div>
   <div class="custom-cursor-ring" aria-hidden="true"></div>
 
-  <!-- Ambient Particle Canvas -->
+  <!-- Persistent 16:9 Portfolio Background Layer (Travels Throughout All Sections) -->
+  <div class="global-portfolio-backdrop" aria-hidden="true">
+    <img src="assets/images/hero-portrait.jpg" alt="Pragadeesh Ambient Backdrop" class="global-backdrop-img">
+    <div class="global-backdrop-overlay"></div>
+  </div>
+
+  <!-- Ambient Fiery Particle Canvas -->
   <canvas id="bg-canvas"></canvas>
 
   <!-- Preloader -->
@@ -117,99 +123,125 @@
 
   <main id="main-content">
     <!-- ==========================================================================
-         1. HERO SECTION
+         1. HERO SECTION (16:9 Dashboard Architecture)
          ========================================================================== -->
     <section class="hero-section" id="hero">
-      <!-- Background Visual Anchor (User Photograph) -->
-      <div class="hero-bg-container">
-        <img src="assets/images/hero-portrait.jpg" alt="Pragadeesh Portrait" class="hero-portrait-img" loading="eager">
-        <div class="hero-gradient-overlay"></div>
-      </div>
-
-      <div class="container">
-        <div class="hero-content">
-          <!-- Availability Pill -->
-          <div class="availability-pill" data-reveal="fade-down" data-delay="100">
-            <span class="pulse-indicator"></span>
-            <span>Open for Software Developer & AI/ML Roles</span>
-          </div>
-
-          <!-- Headline Greeting -->
-          <p class="hero-greeting" data-reveal="fade-up" data-delay="200">Hello, I Am</p>
-
-          <!-- Main Editorial Name -->
-          <h1 class="hero-name" data-reveal="fade-up" data-delay="300">
-            PRAGADEESH<span class="glow-letter">.</span>
-          </h1>
-
-          <!-- Role Rotator -->
-          <h2 class="hero-headline" data-reveal="fade-up" data-delay="400">
-            Aspiring <span class="typed-role">AI & Machine Learning Engineer</span>
-          </h2>
-
-          <!-- Authentic Summary from Resume -->
-          <p class="hero-summary" data-reveal="fade-up" data-delay="500">
-            Aspiring Software Developer with a strong foundation in <strong>Python, Java, SQL, ASP.NET, Full Stack Development, and AI/ML</strong>. Passionate about engineering scalable software solutions, solving complex problems, and designing user-centric digital experiences.
-          </p>
-
-          <!-- Action Buttons -->
-          <div class="hero-actions" data-reveal="fade-up" data-delay="600">
-            <a href="#projects" class="btn btn-primary">
-              <span>Explore My Work</span>
-              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
-
-            <a href="assets/docs/Pragadeesh_Resume.pdf" download="Pragadeesh_Resume.pdf" class="btn btn-secondary">
-              <span>Download Resume</span>
-              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
-              </svg>
-            </a>
-
-            <a href="#contact" class="btn btn-secondary">
-              <span>Contact Me</span>
-              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Highlight Chips -->
-          <div class="hero-highlights" data-reveal="fade-up" data-delay="700">
-            <div class="highlight-chip">
-              <span class="chip-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                </svg>
-              </span>
-              <span>MCA @ Kumaraguru College of Technology</span>
+      <div class="container hero-container-16-9">
+        <div class="hero-dashboard-frame">
+          <div class="hero-content">
+            <!-- Availability Pill -->
+            <div class="availability-pill" data-reveal="fade-down" data-delay="100">
+              <span class="pulse-indicator"></span>
+              <span>Open for Software Developer & AI/ML Roles</span>
             </div>
 
-            <div class="highlight-chip">
-              <span class="chip-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            <!-- Headline Greeting -->
+            <p class="hero-greeting" data-reveal="fade-up" data-delay="200">Hello, I Am</p>
+
+            <!-- Main Editorial Name -->
+            <h1 class="hero-name" data-reveal="fade-up" data-delay="300">
+              PRAGADEESH<span class="glow-letter">.</span>
+            </h1>
+
+            <!-- Role Rotator -->
+            <h2 class="hero-headline" data-reveal="fade-up" data-delay="400">
+              Aspiring <span class="typed-role">AI & Machine Learning Engineer</span>
+            </h2>
+
+            <!-- Authentic Summary from Resume -->
+            <p class="hero-summary" data-reveal="fade-up" data-delay="500">
+              Aspiring Software Developer with a strong foundation in <strong>Python, Java, SQL, ASP.NET, Full Stack Development, AI/ML</strong>, and cloud systems. Passionate about engineering scalable software architectures, solving complex challenges, and creating user-centric digital experiences.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions" data-reveal="fade-up" data-delay="600">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore My Work</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
                 </svg>
-              </span>
-              <span>AI/ML Intern @ Globotics</span>
+              </a>
+
+              <a href="assets/docs/Pragadeesh_Resume.pdf" download="Pragadeesh_Resume.pdf" class="btn btn-secondary">
+                <span>Download Resume</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <span>Contact Me</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
             </div>
 
-            <div class="highlight-chip">
-              <span class="chip-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"/>
-                  <polyline points="8 6 2 12 8 18"/>
-                </svg>
-              </span>
-              <span>Full Stack & AI/ML Stack</span>
+            <!-- Highlight Chips -->
+            <div class="hero-highlights" data-reveal="fade-up" data-delay="700">
+              <div class="highlight-chip">
+                <span class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </span>
+                <span>MCA @ Kumaraguru College of Technology (7.44 CGPA)</span>
+              </div>
+
+              <div class="highlight-chip">
+                <span class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  </svg>
+                </span>
+                <span>AI/ML Intern @ Globotics</span>
+              </div>
+
+              <div class="highlight-chip">
+                <span class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </span>
+                <span>Full Stack & CloudPulse AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Dashboard 16:9 Visual Showcase Side -->
+          <div class="hero-visual-dashboard" data-reveal="fade-left" data-delay="300">
+            <div class="hero-portrait-16-9-wrapper">
+              <img src="assets/images/hero-portrait.jpg" alt="Pragadeesh - Software Developer & AI/ML Engineer" class="hero-dashboard-img" loading="eager">
+              <div class="hero-dashboard-scanline"></div>
+              
+              <!-- Floating Cyber HUD Badge 1 -->
+              <div class="hero-hud-card hud-top-right">
+                <div class="hud-status-dot"></div>
+                <div class="hud-text">
+                  <span class="hud-label">ENGINEERING CORE</span>
+                  <span class="hud-val">AI/ML & Full Stack</span>
+                </div>
+              </div>
+
+              <!-- Floating Cyber HUD Badge 2 -->
+              <div class="hero-hud-card hud-bottom-left">
+                <div class="hud-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <div class="hud-text">
+                  <span class="hud-label">FEATURED PLATFORM</span>
+                  <span class="hud-val">CloudPulse AI · GCP VM</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -246,13 +278,13 @@
           <!-- Story Column -->
           <div class="about-story" data-reveal="fade-right">
             <p class="story-lead">
-              Driven by a deep curiosity for computing, algorithms, and human-centered design.
+              Driven by a deep curiosity for computing, machine learning algorithms, and human-centered software engineering.
             </p>
             <p class="story-text">
-              Equipped with a solid academic foundation in Computer Applications and practical industry experience in Artificial Intelligence & Machine Learning, I specialize in architecting full-stack applications and high-efficiency data workflows.
+              Equipped with a solid academic foundation in Computer Applications and practical industry experience in Artificial Intelligence & Machine Learning, I specialize in architecting full-stack applications, scalable REST APIs, and high-efficiency data workflows.
             </p>
             <p class="story-text">
-              From engineering machine learning algorithms and automating workflows with RPA to crafting secure ASP.NET enterprise systems and interactive UI/UX prototypes in Figma, I focus on building reliable software that delivers measurable value.
+              From engineering machine learning algorithms and automating workflows to crafting secure ASP.NET enterprise systems and interactive UI/UX prototypes in Figma, I focus on building reliable software that delivers measurable real-world impact.
             </p>
 
             <!-- Metrics Grid -->
@@ -274,7 +306,7 @@
               <span class="pillar-index">01</span>
               <div class="pillar-content">
                 <h3>Full Stack Engineering</h3>
-                <p>Developing scalable web backends and responsive frontends using Python, Java, SQL, and ASP.NET.</p>
+                <p>Developing scalable web backends and responsive frontends using Python, Java, SQL, ASP.NET, and modern frameworks.</p>
               </div>
             </div>
 
@@ -282,7 +314,7 @@
               <span class="pillar-index">02</span>
               <div class="pillar-content">
                 <h3>AI & Machine Learning</h3>
-                <p>Building predictive models, preprocessing datasets, and extracting actionable intelligence from complex data.</p>
+                <p>Building predictive models, preprocessing datasets, and extracting actionable intelligence from complex data streams.</p>
               </div>
             </div>
 
@@ -290,15 +322,15 @@
               <span class="pillar-index">03</span>
               <div class="pillar-content">
                 <h3>User-Centric UI/UX Design</h3>
-                <p>Prototyping responsive, aesthetic, and accessible user interfaces with Figma and modern web design principles.</p>
+                <p>Prototyping responsive, aesthetic, and accessible user interfaces with Figma and modern design systems.</p>
               </div>
             </div>
 
             <div class="pillar-item">
               <span class="pillar-index">04</span>
               <div class="pillar-content">
-                <h3>Data Quality & Automation</h3>
-                <p>Ensuring rigorous data cleaning, database optimization, and implementing Robotic Process Automation (RPA).</p>
+                <h3>Cloud Systems & Telemetry</h3>
+                <p>Deploying cloud workloads on GCP, developing real-time system monitoring agents, and optimizing database performance.</p>
               </div>
             </div>
           </div>
@@ -309,7 +341,7 @@
     <!-- ==========================================================================
          3. SKILLS ECOSYSTEM SECTION
          ========================================================================== -->
-    <section class="section" id="skills" style="background: linear-gradient(180deg, #070204 0%, #0d0407 50%, #070204 100%);">
+    <section class="section" id="skills">
       <div class="container">
         <div class="section-header center" data-reveal="fade-up">
           <div class="section-tag">
@@ -320,7 +352,7 @@
             Skills & <span class="accent-text">Technologies</span>
           </h2>
           <p class="section-subtitle">
-            Core technologies and tools mastered through academic rigor, internship development, and practical software projects.
+            Core technologies and tools mastered through academic rigor, internship development, and practical software engineering projects.
           </p>
         </div>
 
@@ -332,7 +364,7 @@
           <button class="skill-filter-btn" data-filter="data">Data & Analytics</button>
           <button class="skill-filter-btn" data-filter="web">Web Development</button>
           <button class="skill-filter-btn" data-filter="uiux">UI/UX Design</button>
-          <button class="skill-filter-btn" data-filter="cloud">Cloud & Tools</button>
+          <button class="skill-filter-btn" data-filter="cloud">Cloud & Systems</button>
         </div>
 
         <!-- Skills Cards Matrix -->
@@ -353,6 +385,7 @@
               <span class="skill-tag">Java</span>
               <span class="skill-tag">SQL</span>
               <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Object-Oriented Programming</span>
             </div>
           </div>
 
@@ -371,7 +404,8 @@
               <span class="skill-tag">Machine Learning (AI/ML)</span>
               <span class="skill-tag">Dataset Preprocessing</span>
               <span class="skill-tag">Algorithm Training</span>
-              <span class="skill-tag">Model Optimization</span>
+              <span class="skill-tag">Anomaly Detection</span>
+              <span class="skill-tag">Responsible AI</span>
             </div>
           </div>
 
@@ -388,11 +422,12 @@
               <h3>Data & Analytics</h3>
             </div>
             <div class="skill-tags-list">
+              <span class="skill-tag">Power BI</span>
               <span class="skill-tag">Data Analytics</span>
               <span class="skill-tag">Data Visualization</span>
-              <span class="skill-tag">Data Cleaning</span>
               <span class="skill-tag">Database Management</span>
               <span class="skill-tag">SQL Server 2019</span>
+              <span class="skill-tag">MongoDB</span>
             </div>
           </div>
 
@@ -411,10 +446,10 @@
             <div class="skill-tags-list">
               <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">ASP.NET 2022</span>
+              <span class="skill-tag">Node.js</span>
               <span class="skill-tag">Full Stack Development</span>
-              <span class="skill-tag">Web Application Dev</span>
               <span class="skill-tag">Responsive Web Design</span>
-              <span class="skill-tag">Chart.js</span>
+              <span class="skill-tag">REST APIs</span>
             </div>
           </div>
 
@@ -436,10 +471,11 @@
               <span class="skill-tag">User Interface Design</span>
               <span class="skill-tag">User-Centric Design</span>
               <span class="skill-tag">Wireframing & Prototypes</span>
+              <span class="skill-tag">Design Systems</span>
             </div>
           </div>
 
-          <!-- Cloud & Automation -->
+          <!-- Cloud & Systems -->
           <div class="skill-category-card" data-category="cloud">
             <div class="skill-category-header">
               <div class="skill-cat-icon">
@@ -447,14 +483,14 @@
                   <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
                 </svg>
               </div>
-              <h3>Cloud & Automation</h3>
+              <h3>Cloud & Systems</h3>
             </div>
             <div class="skill-tags-list">
               <span class="skill-tag">Google Cloud Platform (GCP)</span>
               <span class="skill-tag">Cloud Computing</span>
-              <span class="skill-tag">psutil</span>
-              <span class="skill-tag">RPA and Techniques</span>
-              <span class="skill-tag">Automation Techniques in RPA</span>
+              <span class="skill-tag">psutil Telemetry</span>
+              <span class="skill-tag">VM Monitoring</span>
+              <span class="skill-tag">Hardware Binding Security</span>
             </div>
           </div>
         </div>
@@ -466,23 +502,23 @@
             <div class="marquee-item"><span class="item-bullet">✦</span> FastAPI</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> Google Cloud Platform</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> Machine Learning (AI/ML)</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Power BI</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> ASP.NET 2022</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> SQL Server</div>
-            <div class="marquee-item"><span class="item-bullet">✦</span> Chart.js</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Node.js & MongoDB</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> Figma UI/UX</div>
-            <div class="marquee-item"><span class="item-bullet">✦</span> RPA Automation</div>
-            <div class="marquee-item"><span class="item-bullet">✦</span> Data Structures</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Responsible AI</div>
             <!-- Duplicated for seamless loop -->
             <div class="marquee-item"><span class="item-bullet">✦</span> Python</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> FastAPI</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> Google Cloud Platform</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> Machine Learning (AI/ML)</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Power BI</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> ASP.NET 2022</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> SQL Server</div>
-            <div class="marquee-item"><span class="item-bullet">✦</span> Chart.js</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Node.js & MongoDB</div>
             <div class="marquee-item"><span class="item-bullet">✦</span> Figma UI/UX</div>
-            <div class="marquee-item"><span class="item-bullet">✦</span> RPA Automation</div>
-            <div class="marquee-item"><span class="item-bullet">✦</span> Data Structures</div>
+            <div class="marquee-item"><span class="item-bullet">✦</span> Responsible AI</div>
           </div>
         </div>
       </div>
@@ -540,7 +576,7 @@
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </span>
-                  <p><strong>Machine Learning Model Development:</strong> Developed and evaluated machine learning models to improve data analysis efficiency and automated insights.</p>
+                  <p><strong>Machine Learning Model Development:</strong> Developed and evaluated machine learning models to improve data analysis efficiency and automated insights generation.</p>
                 </div>
 
                 <div class="resp-item">
@@ -549,7 +585,7 @@
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </span>
-                  <p><strong>Dataset Preprocessing:</strong> Assisted in data cleaning, wrangling, and preprocessing datasets for training algorithms, ensuring data quality and model accuracy.</p>
+                  <p><strong>Dataset Preprocessing & Quality:</strong> Assisted in comprehensive preprocessing and cleaning of datasets for training algorithms, ensuring data quality and model accuracy.</p>
                 </div>
 
                 <div class="resp-item">
@@ -567,7 +603,7 @@
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </span>
-                  <p><strong>Data Visualizations:</strong> Developed polished and intuitive visual dashboards to communicate results of data analyses effectively to project stakeholders.</p>
+                  <p><strong>Analytical Visualizations:</strong> Developed polished and intuitive visual dashboards to share the findings and metrics of data analyses clearly with stakeholders.</p>
                 </div>
               </div>
 
@@ -598,7 +634,7 @@
             Engineering & <span class="accent-text">Software Security</span>
           </h2>
           <p class="section-subtitle">
-            A deep dive into production-level architecture, licensing protection, and secure application development.
+            A deep dive into production-level architecture, licensing protection, and real-time cloud VM anomaly detection.
           </p>
         </div>
 
@@ -610,9 +646,9 @@
               <div class="project-info-side">
                 <div>
                   <div class="project-type-tag">Intelligent Cloud Monitoring & ML Anomaly Detection</div>
-                  <h3 class="project-title">CloudPulse AI</h3>
+                  <h3 class="project-title">CloudPulse AI · Cloud VM Monitoring</h3>
                   <p class="project-desc">
-                    CloudPulse AI is an intelligent cloud monitoring and anomaly detection platform designed to provide real-time visibility into Google Cloud VM resources. The system collects CPU, memory, and disk telemetry via a Python agent, streams metrics to a FastAPI backend, and leverages machine learning to detect unusual resource spikes and evaluate system risk.
+                    CloudPulse AI is an intelligent cloud monitoring and anomaly detection platform designed to provide real-time visibility into Google Cloud VM resources. The system collects CPU, memory, and disk telemetry via a Python agent, streams metrics to a FastAPI backend, and leverages machine learning to detect unusual spikes and evaluate system risk.
                   </p>
 
                   <!-- Feature Bullets -->
@@ -621,7 +657,7 @@
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                       </svg>
-                      <span>Real-Time CPU, Memory & Disk Telemetry</span>
+                      <span>Real-Time CPU, RAM & Disk Telemetry</span>
                     </div>
 
                     <div class="feat-item">
@@ -637,7 +673,7 @@
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
                       </svg>
-                      <span>FastAPI REST API Ingestion Backend</span>
+                      <span>FastAPI REST Ingestion Backend</span>
                     </div>
 
                     <div class="feat-item">
@@ -646,7 +682,7 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
                         <line x1="12" y1="17" x2="12.01" y2="17"/>
                       </svg>
-                      <span>ML-Based Anomaly & Risk Detection</span>
+                      <span>ML-Based Anomaly & Outlier Detection</span>
                     </div>
 
                     <div class="feat-item">
@@ -655,7 +691,7 @@
                         <line x1="12" y1="20" x2="12" y2="4"/>
                         <line x1="6" y1="20" x2="6" y2="14"/>
                       </svg>
-                      <span>Interactive Live Dashboard (Chart.js)</span>
+                      <span>Interactive Live Dashboard</span>
                     </div>
 
                     <div class="feat-item">
@@ -674,7 +710,6 @@
                     <span class="tech-badge">psutil</span>
                     <span class="tech-badge">Machine Learning</span>
                     <span class="tech-badge">Google Cloud Platform</span>
-                    <span class="tech-badge">Chart.js</span>
                     <span class="tech-badge">REST APIs</span>
                   </div>
 
@@ -739,7 +774,7 @@
                   <div class="arch-connector"></div>
 
                   <!-- Node 4 -->
-                  <div class="arch-node" style="border-color: var(--accent-ruby); background: rgba(35, 12, 22, 0.9);">
+                  <div class="arch-node" style="border-color: var(--accent-ruby); background: rgba(35, 10, 22, 0.95);">
                     <div class="arch-icon" style="background: var(--accent-ruby); color: #fff;">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="18" y1="20" x2="18" y2="10"/>
@@ -749,7 +784,7 @@
                     </div>
                     <div class="arch-text">
                       <h4>4. Interactive Live Dashboard</h4>
-                      <p>Real-time Chart.js telemetry with risk indicators & alerts</p>
+                      <p>Real-time telemetry stream with risk alerts & health indicators</p>
                     </div>
                   </div>
                 </div>
@@ -766,7 +801,7 @@
                   <div class="project-type-tag">Enterprise Licensing & Anti-Piracy Architecture</div>
                   <h3 class="project-title">Software Piracy Protection System</h3>
                   <p class="project-desc">
-                    Designed and implemented a comprehensive Software Piracy Protection System using ASP.NET 2022 and SQL Server 2019 to secure software distribution and protect intellectual property against unauthorized distribution and tampering.
+                    Designed and implemented a comprehensive Software Piracy Protection System using ASP.NET 2022 and SQL Server 2019 to secure software distribution and protect intellectual property against unauthorized distribution, cracking, and tampering.
                   </p>
 
                   <!-- Feature Bullets -->
@@ -881,7 +916,7 @@
                   <div class="arch-connector"></div>
 
                   <!-- Node 4 -->
-                  <div class="arch-node" style="border-color: var(--accent-ruby); background: rgba(35, 12, 22, 0.9);">
+                  <div class="arch-node" style="border-color: var(--accent-ruby); background: rgba(35, 10, 22, 0.95);">
                     <div class="arch-icon" style="background: var(--accent-ruby); color: #fff;">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -903,7 +938,7 @@
     <!-- ==========================================================================
          6. EDUCATION SECTION
          ========================================================================== -->
-    <section class="section" id="education" style="background: linear-gradient(180deg, #070204 0%, #0d0407 50%, #070204 100%);">
+    <section class="section" id="education">
       <div class="container">
         <div class="section-header" data-reveal="fade-up">
           <div class="section-tag">
@@ -914,7 +949,7 @@
             Education & <span class="accent-text">Qualifications</span>
           </h2>
           <p class="section-subtitle">
-            Comprehensive computer science and computer applications education from reputable universities and institutions.
+            Comprehensive computer applications and computing foundation from reputable universities and institutions.
           </p>
         </div>
 
@@ -954,9 +989,9 @@
             <div>
               <span class="edu-level-badge">Higher Secondary</span>
               <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
-              <p class="edu-specialization">Science & Mathematics Curriculum</p>
+              <p class="edu-specialization">Kendriya Vidyalaya (Ministry of H.R.D Govt of India)</p>
               <p class="edu-institution">Kendriya Vidyalaya</p>
-              <p class="edu-university">Ministry of H.R.D Govt of India | CBSE</p>
+              <p class="edu-university">CBSE Curriculum</p>
             </div>
             <div class="edu-score-box">
               <span class="edu-score-label">Final Grade</span>
@@ -969,9 +1004,9 @@
             <div>
               <span class="edu-level-badge">Secondary Education</span>
               <h3 class="edu-degree">Secondary School Certificate (SSLC)</h3>
-              <p class="edu-specialization">General Secondary Curriculum</p>
+              <p class="edu-specialization">Kendriya Vidyalaya (Ministry of H.R.D Govt of India)</p>
               <p class="edu-institution">Kendriya Vidyalaya</p>
-              <p class="edu-university">Ministry of H.R.D Govt of India | CBSE</p>
+              <p class="edu-university">CBSE Curriculum</p>
             </div>
             <div class="edu-score-box">
               <span class="edu-score-label">Final Grade</span>
@@ -983,7 +1018,7 @@
     </section>
 
     <!-- ==========================================================================
-         7. CERTIFICATIONS SECTION
+         7. CERTIFICATIONS SECTION (Updated from Resume)
          ========================================================================== -->
     <section class="section" id="certifications">
       <div class="container">
@@ -996,25 +1031,13 @@
             Certifications & <span class="accent-text">Specializations</span>
           </h2>
           <p class="section-subtitle">
-            Formal certifications in data cleaning, visual analytics, and Robotic Process Automation (RPA).
+            Industry-recognized credentials in analytics, full stack backend architectures, UI/UX design systems, and ethical AI development.
           </p>
         </div>
 
         <div class="certifications-grid">
-          <!-- Cert 1 -->
+          <!-- Cert 1: Power BI -->
           <div class="cert-card" data-reveal="fade-up" data-delay="100">
-            <div class="cert-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-              </svg>
-            </div>
-            <h3 class="cert-name">Data Cleaning</h3>
-            <p class="cert-desc">Techniques for handling null values, outlier mitigation, schema normalization, and quality validation.</p>
-            <span class="cert-badge-pill">Verified Credential</span>
-          </div>
-
-          <!-- Cert 2 -->
-          <div class="cert-card" data-reveal="fade-up" data-delay="200">
             <div class="cert-icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="20" x2="18" y2="10"/>
@@ -1022,36 +1045,50 @@
                 <line x1="6" y1="20" x2="6" y2="14"/>
               </svg>
             </div>
-            <h3 class="cert-name">Data Visualization</h3>
-            <p class="cert-desc">Visual storytelling, charting statistical patterns, interactive reporting, and analytical dashboarding.</p>
+            <h3 class="cert-name">Data Analysis and Visualization with Power BI</h3>
+            <p class="cert-desc">Advanced data modeling, DAX queries, Power Query ETL pipelines, and interactive executive reporting dashboards.</p>
             <span class="cert-badge-pill">Verified Credential</span>
           </div>
 
-          <!-- Cert 3 -->
+          <!-- Cert 2: Node.js & MongoDB -->
+          <div class="cert-card" data-reveal="fade-up" data-delay="200">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="cert-name">Node.js & MongoDB: Developing Back-end Database Applications</h3>
+            <p class="cert-desc">Building scalable asynchronous RESTful APIs, Mongoose schema modeling, CRUD architecture, and database optimization.</p>
+            <span class="cert-badge-pill">Verified Credential</span>
+          </div>
+
+          <!-- Cert 3: UI/UX -->
           <div class="cert-card" data-reveal="fade-up" data-delay="300">
             <div class="cert-icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="10" rx="2"/>
-                <circle cx="12" cy="5" r="2"/>
-                <path d="M12 7v4"/>
-                <line x1="8" y1="16" x2="8.01" y2="16"/>
-                <line x1="16" y1="16" x2="16.01" y2="16"/>
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
               </svg>
             </div>
-            <h3 class="cert-name">RPA and Techniques</h3>
-            <p class="cert-desc">Foundational robotic process automation, bot design patterns, task extraction, and automation workflows.</p>
+            <h3 class="cert-name">Designing User Interfaces and Experiences (UI/UX)</h3>
+            <p class="cert-desc">Interactive Figma prototyping, user-centered wireframing, typography hierarchies, and responsive design systems.</p>
             <span class="cert-badge-pill">Verified Credential</span>
           </div>
 
-          <!-- Cert 4 -->
+          <!-- Cert 4: Responsible AI -->
           <div class="cert-card" data-reveal="fade-up" data-delay="400">
             <div class="cert-icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
-            <h3 class="cert-name">Automation Techniques in RPA</h3>
-            <p class="cert-desc">Advanced enterprise automation strategies, exception handling, data integration, and process scalability.</p>
+            <h3 class="cert-name">Responsible AI - Principles and Ethical Considerations</h3>
+            <p class="cert-desc">Ethical AI frameworks, algorithmic fairness, bias mitigation, data privacy standards, and transparent ML model deployment.</p>
             <span class="cert-badge-pill">Verified Credential</span>
           </div>
         </div>
@@ -1072,7 +1109,7 @@
             Let's Build Something <span class="accent-text">Meaningful</span>.
           </h2>
           <p class="section-subtitle">
-            Whether you have a job opportunity, a project to collaborate on, or wish to connect, my inbox is always open.
+            Whether you have a software developer or AI/ML opportunity, a project to collaborate on, or wish to connect, my inbox is always open.
           </p>
         </div>
 
@@ -1081,7 +1118,7 @@
           <div class="contact-info-col">
             <div>
               <p class="contact-lead-text">
-                Feel free to reach out directly via email, phone, or connect with me on LinkedIn. I am actively looking for opportunities to contribute to dynamic software engineering teams.
+                Feel free to reach out directly via email, phone, or connect with me on LinkedIn. I am actively looking for opportunities to contribute to high-impact software engineering teams.
               </p>
             </div>
 
@@ -1198,7 +1235,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <h3>PRAGADEESH<span style="color: var(--accent-ruby)">.</span></h3>
+          <h3>PRAGADEESH<span style="color: var(--accent-orange)">.</span></h3>
           <p>Aspiring Software Developer & AI/ML Engineer</p>
         </div>
 

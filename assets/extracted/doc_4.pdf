@@ -1,0 +1,1 @@
+%PDF', pos)\n    if idx == -1: break\n    pdf_starts.append(idx)\n    pos = idx + 1\n\nfor i, s in enumerate(pdf_starts):\n    end_idx = data.find(b'%%EOF'
