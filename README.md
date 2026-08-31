@@ -1,183 +1,85 @@
-# Pragadeesh — Personal Portfolio
+# Pragadeesh | Software Developer Portfolio
 
-This repository contains my personal portfolio website.
+Hi, I'm Pragadeesh. This is my personal portfolio website where I share my projects, technical skills, and internship experience in software development, AI/ML, cloud computing, data analytics, and UI/UX.
 
-I built this portfolio to have one place where I can showcase my skills, projects, internship experience, education, certifications, and the kind of work I am interested in.
+🌐 Live website: [https://pragadeeshr18-alt.github.io/portfolio/](https://pragadeeshr18-alt.github.io/portfolio/)
 
-## Live Portfolio
+## About Me
 
-https://pragadeeshr18-alt.github.io/portfolio/
+I am an MCA student and aspiring software developer. I enjoy building practical web applications and working with data, cloud platforms, AI/ML, and user-friendly interfaces.
 
-## About
-
-I am an aspiring Software Developer with an interest in Artificial Intelligence and Machine Learning.
-
-My main areas of interest include:
-
-- Software Development
-- AI & Machine Learning
-- Full Stack Web Development
-- Data Analytics
-- Cloud Computing
-- UI/UX Design
-
-I enjoy working on projects where software, data, and practical problem-solving come together.
-
-## What's Included
-
-The portfolio currently includes:
-
-- About Me
-- Technical Skills
-- Internship Experience
-- Featured Projects
-- Education
-- Certifications
-- Contact Section
-- Resume Download
+This portfolio was created to present my work, learning journey, and the technologies I use.
 
 ## Projects
 
 ### CloudPulse AI
 
-CloudPulse AI is a cloud monitoring and anomaly detection project designed to monitor Google Cloud VM resources.
+CloudPulse AI is a cloud VM monitoring and anomaly detection project built for Google Cloud resources.
 
-The system collects CPU, memory, and disk usage using a Python monitoring agent and sends the collected information to a FastAPI backend. Machine learning is then used to identify unusual resource usage and assess system risk.
+It collects CPU, memory, and disk usage from a virtual machine using Python and `psutil`. The collected data is sent to a FastAPI backend and displayed on a dashboard with live metrics and system status.
 
-**Technologies used:**
+The project also uses machine learning to identify unusual resource usage and provide a basic risk assessment.
 
-- Python
-- FastAPI
-- psutil
-- Machine Learning
-- Google Cloud Platform
-- Chart.js
-- REST APIs
+**Main features:**
+
+- Real-time CPU, memory, and disk monitoring
+- Python monitoring agent using `psutil`
+- FastAPI REST API integration
+- Interactive monitoring dashboard
+- Machine learning-based anomaly detection
+- System risk and status monitoring
+- Google Cloud VM deployment
+
+**Technologies used:**  
+Python, FastAPI, psutil, Machine Learning, HTML, CSS, JavaScript, Chart.js, and Google Cloud Platform.
 
 ### Software Piracy Protection System
 
-A web-based system developed to help protect software distribution and reduce unauthorized access and tampering.
+This project was developed to improve software license security and reduce unauthorised software use.
 
-The project includes features such as secure software purchasing, OTP-based activation, IP/MAC address binding, and an anti-piracy access mechanism.
+It includes user registration, secure purchase flow, OTP-based activation, and IP/MAC address binding. The system helps ensure that licensed software is used only by authorised users.
 
-**Technologies used:**
-
-- ASP.NET 2022
-- C#
-- SQL Server 2019
-- OTP Security
-- Hardware Binding
-- Full Stack Development
-
-## Skills
-
-### Programming & Development
-- Python
-- Java
-- SQL
-- C#
-- ASP.NET
-
-### Web Development
-- HTML
-- CSS
-- JavaScript
-- FastAPI
-- ASP.NET
-- Full Stack Development
-- Chart.js
-- Responsive Web Design
-
-### AI & Data
-- Machine Learning
-- AI/ML
-- Data Analytics
-- Data Visualization
-- Data Cleaning
-- Database Management
-
-### Cloud & Automation
-- Google Cloud Platform
-- Cloud Computing
-- psutil
-- RPA
-- Automation
-
-### Design
-- Figma
-- UI/UX Design
-- Wireframing
-- Prototyping
+**Technologies used:**  
+ASP.NET, SQL Server, HTML, CSS, and JavaScript.
 
 ## Internship Experience
 
-### AI & Machine Learning Intern — Globotics
+### AI & Machine Learning Intern  
+**Globotics, Coimbatore**  
+June 2026 – July 2026
 
-During my internship, I worked on machine learning and data-related tasks as part of a team.
+During my internship, I worked on AI and machine-learning related tasks. My work included:
 
-My work included:
-
-- Developing and evaluating machine learning models
-- Cleaning and preprocessing datasets
+- Preparing and cleaning datasets for ML models
+- Supporting machine-learning model development
+- Improving data analysis workflows
+- Creating visualisations to explain insights clearly
 - Working with team members on AI project tasks
-- Creating data visualizations and dashboards
-- Working with Python and machine learning techniques
 
-## Portfolio Features
+## Skills
 
-The website includes several interactive elements rather than being just a collection of static pages.
-
-Some of them include:
-
-- Responsive navigation
-- Mobile navigation menu
-- Animated page preloader
-- Scroll-based reveal animations
-- Animated background particles
-- Custom cursor on desktop
-- Hero image parallax effect
-- Rotating typewriter text for roles
-- Animated statistics
-- Skill category filtering
-- Copy-to-clipboard interaction
-- Contact form
-- Smooth scrolling
-- Back-to-top button
-- Reduced-motion support
-
-## Tech Stack
-
-**Frontend**
-- HTML5
-- CSS3
-- JavaScript
-
-**Libraries / APIs**
-- Chart.js
-- Google Fonts
-- Browser Clipboard API
-
-**Cloud**
+- Python
+- Java
+- SQL
+- ASP.NET
+- FastAPI
+- React
+- Artificial Intelligence and Machine Learning
+- Data Analytics and Visualisation
 - Google Cloud Platform
+- Figma and UI/UX Design
 
-**Deployment**
-- GitHub Pages
-
-## Project Structure
+## Folder Structure
 
 ```text
 portfolio/
-│
 ├── assets/
 │   ├── images/
-│   └── docs/
-│
+│   ├── docs/
+│   └── test_images/
 ├── css/
 │   ├── style.css
 │   └── animations.css
-│
 ├── js/
-│   ├── main.js
-│   └── animations.js
-│
-└── index.html
+├── index.html
+└── README.md
